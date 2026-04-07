@@ -28,7 +28,7 @@ public class OrderService {
             order.setQuantity(orderRequest.quantity());
             orderRepository.save(order);
         }else{
-            throw new RuntimeException("Product is not in stock, please try again later.");
+            throw new RuntimeException("Product with skuCode " + orderRequest.skuCode() + " is not in stock");
         }
     }
 }
