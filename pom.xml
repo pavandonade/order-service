@@ -147,14 +147,6 @@
 		</dependency>
 	</dependencies>
 
-	<repositories>
-		<repository>
-			<id>confluent</id>
-			<name>Confluent Repository</name>
-			<url>https://packages.confluent.io/maven/</url>
-		</repository>
-	</repositories>
-
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -232,4 +224,11 @@
 		</plugins>
 	</build>
 
+	<repositories>
+		<repository>
+			<id>confluent</id>
+			<name>Confluent Repository</name>
+			<url>https://packages.confluent.io/maven/</url>
+		</repository>
+	</repositories>
 </project>
